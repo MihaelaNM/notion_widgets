@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Socials</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    :root{
+      --size: 44px;     /* make icons bigger/smaller here */
+      --bg: #eae9e9;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{display:grid;place-items:center;min-height:100vh;font-family:system-ui,-apple-system,Segoe UI,Roboto}
+    .wrapper{padding-top:10px;display:inline-flex;gap:12px}
+
+    .social{
+      width:var(--size);
+      height:var(--size);
+      border-radius:50%;
+      background:var(--bg);
+      display:grid;
+      place-items:center;
+      text-decoration:none;
+      color:inherit;
+      position:relative;
+      transition:transform .15s ease, background-color .15s ease, color .15s ease;
+    }
+    .social:focus-visible{outline:2px solid #888; outline-offset:3px}
+    .social:hover{color:#fff; transform:translateY(-1px)}
+    .icon{font-size:calc(var(--size) * .48)} /* icon scales with size */
+
+    /* brand hovers */
+    .instagram:hover{background: radial-gradient(circle, #f166d9 10%, #fcb045 76%, #fd1d1d 100%)}
+    .linkedin:hover{background:#0e76a8}
+    .email:hover{background:#23c8c8}
+    .website:hover{background:#ffbd2f}
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <!-- Website -->
+    <a class="social website" href="https://YOUR-WEBSITE.com" target="_blank" rel="noopener">
+      <span class="icon"><i class="fa-solid fa-globe"></i></span>
+      <span class="sr-only">Website</span>
+    </a>
+
+    <!-- Email -->
+    <a class="social email" href="mailto:YOURNAME@YOURDOMAIN.com">
+      <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+      <span class="sr-only">Email</span>
+    </a>
+
+    <!-- Instagram -->
+    <a class="social instagram" href="https://instagram.com/YOUR_HANDLE" target="_blank" rel="noopener">
+      <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+      <span class="sr-only">Instagram</span>
+    </a>
+
+    <!-- LinkedIn -->
+    <a class="social linkedin" href="https://www.linkedin.com/in/YOUR_HANDLE" target="_blank" rel="noopener">
+      <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </div>
+
+</body>
+</html>
