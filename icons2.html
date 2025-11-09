@@ -1,0 +1,79 @@
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body { display: grid; place-items: center; }
+
+  .wrapper { padding-top: 10px; display: inline-flex; }
+
+  .social {
+    background-color: #eae9e9;
+    width: 45px;    /* smaller */
+    height: 45px;   /* smaller */
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .icon {
+    font-size: 1em;  /* slightly smaller icon inside */
+  }
+
+  .blog:hover      { background-color: #ffbd2f; color: #fff; }
+  .email:hover     { background-color: #23c8c8; color: #fff; }
+  .instagram:hover {
+    color: #fff;
+    background: radial-gradient(circle, rgba(241,102,217,1) 10%, rgba(252,176,69,1) 76%, rgba(253,29,29,1) 100%);
+  }
+  .linkedin:hover  { background-color: #0e76a8; color: #fff; }
+</style>
+
+<div class="wrapper">
+
+  <!-- WEBSITE -->
+  <a
+    class="social blog"
+    href="https://YOUR-WEBSITE.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Website"
+  >
+    <span class="icon"><i class="fa-solid fa-blog"></i></span>
+  </a>
+
+  <!-- EMAIL -->
+  <a
+    class="social email"
+    href="mailto:YOURNAME@EMAIL.com"
+    aria-label="Email"
+  >
+    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+  </a>
+
+  <!-- INSTAGRAM -->
+  <a
+    class="social instagram"
+    href="https://instagram.com/YOURUSERNAME"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+  >
+    <span class="icon"><i class="fab fa-instagram"></i></span>
+  </a>
+
+  <!-- LINKEDIN -->
+  <a
+    class="social linkedin"
+    href="https://www.linkedin.com/in/YOUR-USERNAME/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+  >
+    <span class="icon"><i class="fab fa-linkedin"></i></span>
+  </a>
+
+</div>
