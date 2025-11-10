@@ -3,17 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Weather Widget</title>
+  <title>Pasco Weather Widget</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #faf9f6;
+      font-family: sans-serif;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Your widget -->
   <a class="weatherwidget-io"
-     href="https://forecast7.com/en/46d23n119d09/pasco/"
+     href="https://forecast7.com/en/46d23n119d09/pasco/?unit=us"
      data-label_1="PASCO"
      data-label_2="WEATHER"
-     data-days="3"
-     data-theme="beige">
+     data-icons="Climacons Animated"
+     data-mode="Current"
+     data-days="3">
      PASCO WEATHER
   </a>
 
