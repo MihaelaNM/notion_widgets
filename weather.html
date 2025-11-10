@@ -3,43 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pasco Weather Widget</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background: #faf9f6;
-      font-family: sans-serif;
-    }
-  </style>
+  <title>Weather Widget</title>
 </head>
 <body>
 
-  <a class="weatherwidget-io"
-     href="https://forecast7.com/en/46d23n119d09/pasco/?unit=us"
-     data-label_1="PASCO"
-     data-label_2="WEATHER"
-     data-icons="Climacons Animated"
-     data-mode="Current"
-     data-days="3">
-     PASCO WEATHER
-  </a>
+<a class="weatherwidget-io"
+   href="https://forecast7.com/en/46d23n119d09/pasco/?unit=us"
+   data-label_1="PASCO"
+   data-label_2="WEATHER"
+   data-icons="Climacons Animated"
+   data-mode="Current"
+   data-days="3">
+   PASCO WEATHER
+</a>
 
-  <script>
-    !function(d,s,id){
-      var js,fjs=d.getElementsByTagName(s)[0];
-      if(!d.getElementById(id)){
-        js=d.createElement(s);
-        js.id=id;
-        js.src='https://weatherwidget.io/js/widget.min.js';
-        fjs.parentNode.insertBefore(js,fjs);
-      }
-    }(document,'script','weatherwidget-io-js');
-  </script>
+<script>
+!function(d,s,id){
+  var js,fjs=d.getElementsByTagName(s)[0];
+  if(!d.getElementById(id)){
+    js=d.createElement(s);
+    js.id=id;
+    js.src='https://weatherwidget.io/js/widget.min.js';
+    fjs.parentNode.insertBefore(js,fjs);
+  }
+}(document,'script','weatherwidget-io-js');
+</script>
 
 </body>
 </html>
+
