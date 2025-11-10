@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pasco Weather</title>
+<style>
+  /* Remove all GitHub Pages theme influence */
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+  }
+
+  /* Center widget cleanly */
+  .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+  }
+
+  /* Prevent templates from injecting styles */
+  .weatherwidget-io {
+    all: unset;
+    font-family: inherit;
+    background: transparent;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<a class="weatherwidget-io"
+   href="https://forecast7.com/en/46d23n119d09/pasco/?unit=us"
+   data-label_1="PASCO"
+   data-label_2="WEATHER"
+   data-icons="Climacons Animated"
+   data-mode="current"
+   data-days="3"
+   data-theme="">
+   PASCO WEATHER
+</a>
+</div>
+
+<script>
+!function(d,s,id){
+    var js,fjs=d.getElementsByTagName(s)[0];
+    if(!d.getElementById(id)){
+        js=d.createElement(s); js.id=id;
+        js.src='https://weatherwidget.io/js/widget.min.js';
+        fjs.parentNode.insertBefore(js,fjs);
+    }
+}(document,'script','weatherwidget-io-js');
+</script>
+
+</body>
+</html>
